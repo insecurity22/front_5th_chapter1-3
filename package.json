@@ -19,7 +19,9 @@
     "test:basic": "vitest basic",
     "test:advanced": "vitest advanced",
     "test:ui": "vitest --ui",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy-preview": "npm run build && npm run preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
